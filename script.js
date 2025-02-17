@@ -4,16 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const questionPage = document.getElementById("question-page");
   const finalPage = document.getElementById("final-page");
 
-  // Show the question page after the GIF loads
-  const loveGif = document.getElementById("love-gif");
-  loveGif.onload = () => {
-    setTimeout(() => {
-      landingPage.style.display = "none";
-      questionPage.style.display = "block";
-    }, 3000); // Wait 3 seconds before showing the question
-  };
+  // Show the question page when "Next" is clicked
+  const nextButton = document.getElementById("next-button");
+  nextButton.addEventListener("click", () => {
+    landingPage.style.display = "none";
+    questionPage.style.display = "block";
+  });
 
-  // Handle button clicks
+  // Handle "Yes" button clicks
   const yesButton = document.getElementById("yes-button");
   const yesButton2 = document.getElementById("yes-button2");
 
@@ -24,4 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     questionPage.style.display = "none";
     finalPage.style.display = "block";
   }
+
+  // Handle "Inshallah" click
+  const inshallahOption = document.getElementById("inshallah-option");
+  inshallahOption.addEventListener("click", () => {
+    alert("Inshallah means 'God willing' — I'll take that as a yes! ❤️");
+    showFinalPage();
+  });
 });
