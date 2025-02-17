@@ -36,3 +36,34 @@ button:hover {
   width: 300px;
   margin-top: 20px;
 }
+
+/* Next Button */
+#next-button {
+  margin-top: 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#next-button:hover {
+  background-color: #2980b9;
+}
+
+/* Inshallah Option */
+#inshallah-option {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2em;
+  color: #e74c3c;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#inshallah-option:hover {
+  color: #c0392b;
+}
