@@ -1,0 +1,38 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #e74c3c;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.5em;
+  color: #333;
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+#love-gif {
+  width: 300px;
+  margin-top: 20px;
+}
